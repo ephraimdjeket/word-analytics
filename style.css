@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(214, 214, 214);
+  position: relative;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e2e2e2;
+  max-width: 75%;
+  height: 30rem;
+  border-radius: 10px;
+  top: 270px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0rem 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #7520a3;
+  background: linear-gradient(135deg, #7520a3, #a41dd0);
+  height: 20rem;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  word-spacing: -3rem;
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.space {
+  word-spacing: 3rem;
+}
+
+.slogan {
+  color: #ffffff;
+}
+
+textarea {
+  font-style: inherit;
+  border: none;
+  padding: 2rem;
+  outline-style: none;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+.second-heading {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.stat_number {
+  font-weight: 500;
+}
+
+.stat-number--limit {
+  color: red;
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    word-spacing: -3rem;
+    color: white;
+  }
+
+  .slogan {
+    color: #ffffff;
+  }
+
+  .stats {
+    font-size: 1.5rem;
+  }
+
+  .second-heading {
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+}
