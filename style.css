@@ -161,6 +161,10 @@ textarea {
     color: #ffffff;
   }
 
+  .stat {
+    padding: 0rem 0rem;
+  }
+
   .stats {
     font-size: 1.5rem;
   }
