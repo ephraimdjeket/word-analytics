@@ -34,4 +34,4 @@ const inputHandler = () => {
   }
 };
 
-textAreaEL.addEventListener("input", () => inputHandler);
+textAreaEL.addEventListener("input", inputHandler);
